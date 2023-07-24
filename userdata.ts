@@ -8,7 +8,7 @@ export const users = {
                         state: faker.location.state(),
                         zipCode: faker.location.zipCode(),
                         phoneNumber: faker.phone.number(),
-                        SSN : "11111111111111",
+                        SSN :  "000-11-2345",
                         country: faker.location.country(),
                         usernameMobile: faker.string.alphanumeric({ length: { min: 8, max: 15 } }) ,
                         usernameDesktop:faker.string.alphanumeric({ length: { min: 8, max: 15 } }),

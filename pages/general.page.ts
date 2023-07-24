@@ -1,6 +1,6 @@
 import type { Page, Locator } from '@playwright/test';
 
-export class generalPage {
+export class GeneralPage {
   private readonly logo : Locator;
   private readonly logoutLink : Locator;
 

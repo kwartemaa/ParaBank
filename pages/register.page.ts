@@ -1,6 +1,6 @@
 import type { Page, Locator } from '@playwright/test';
 
-export class HomePage {
+export class RegisterPage {
   private readonly firstNameField : Locator;
   private readonly lastNameField : Locator;
   private readonly addressField : Locator;
@@ -16,7 +16,7 @@ export class HomePage {
 
 
   constructor(public readonly page: Page) {
-    this.firstNameField = this.page.getByTestId('input[id="customer.firstName"]');
+    this.firstNameField = this.page.locator('input[id="customer.firstName"]');
     this.lastNameField = this.page.locator('input[id="customer.lastName"]');
     this.addressField = this.page.locator('input[id="customer.address.street"]')
     this.cityField = this.page.locator('input[id="customer.address.city"]')

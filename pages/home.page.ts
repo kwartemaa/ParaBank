@@ -7,7 +7,7 @@ export class HomePage {
   private readonly loginButton: Locator;
 
   constructor(public readonly page: Page) {
-    this.registerLink = this.page.locator('input.new-todo');
+    this.registerLink = this.page.getByRole('link',{name:'Register'});
     this.usernameField = this.page.locator('input[name="username"]');
     this.passwordField = this.page.locator('input[name="password"]');
     this.loginButton = this.page.locator('input[value="Log In"]');
